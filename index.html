@@ -19,26 +19,26 @@
                 </div>
                 <div class="flex gap-1">
              <img src="assets/checkbox.png" alt="">
-             <p  class="font-bold text-xl ">23</p>
+             <p id="main-number" class="font-bold text-xl ">23</p>
              <div><img id="color-btn" class="w-7 mx-4" src="assets/theme-btn.png" alt=""></div>
                 </div>
               </div>
         </nav>
     </header>
     <main class="max-w-7xl min-h-screen mx-auto bg-gray-100  mt-8 p-6 ">
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section class="grid grid-cols-1 md:grid-cols-3  gap-6">
         <!-- Task ass. -->
         <div class="card bg-gray-200 text-neutral-content w-80">
           <div class="card-body items-center text-center flex flex-row mx-auto">
             <img src="assets/checkbox.png" alt="">
           <div>  <h2 class="text-black">Task assigned</h2><br>
-            <h1 class="text-black text-xl font-bold">05</h1></div>
+            <h1 id="task-number" class="text-black text-xl font-bold">05</h1></div>
             
           </div>
         </div>
         <!-- Discover -->
-        <div class="card bg-primary text-primary-content min-w-96">
-          <div class="card-body flex-row"> 
+        <div class="card bg-primary text-primary-content max-w-96">
+          <div class="card-body flex flex-row"> 
             <img class="w-16" src="assets/board.png" alt="">
             <h2 id="discover-it" class="card-title  text-lg font-bold">Discover Something New Today!</h2>
            
@@ -55,7 +55,8 @@
           </div>
         </div>
         <!-- cards section -->
-       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-9/12">
+
+       <div class="grid grid-cols-1 md:grid-cols-3  gap-8 w-full">
         <!-- card 1 -->
          <div class="card bg-base-100 w-96 shadow-sm mx-auto">
         <p class="p-3 bg-gray-200 borrder rounded-lg w-22">ShopEase</p>
@@ -68,7 +69,7 @@
   <div>      <p>Deadline</p>
     <p class="font-bold">21 March,2025</p></div>
           <div class="card-actions">
-            <button class="btn btn-primary bg-blue-500 p-3">Completed</button>
+            <button id="mobile-btn" class="btn btn-primary bg-blue-500 p-3">Completed</button>
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@
   <div>      <p>Deadline</p>
     <p class="font-bold">21 March,2025</p></div>
           <div class="card-actions">
-            <button class="btn btn-primary bg-blue-500 p-3">Completed</button>
+            <button id="dark-btn" class="btn btn-primary bg-blue-500 p-3">Completed</button>
           </div>
         </div>
       </div>
@@ -100,7 +101,7 @@
   <div>      <p>Deadline</p>
     <p class="font-bold">21 March,2025</p></div>
           <div class="card-actions">
-            <button class="btn btn-primary bg-blue-500 p-3">Completed</button>
+            <button id="optimize-btn" class="btn btn-primary bg-blue-500 p-3">Completed</button>
           </div>
         </div>
       </div>
@@ -116,7 +117,7 @@
   <div>      <p>Deadline</p>
     <p class="font-bold">21 March,2025</p></div>
           <div class="card-actions">
-            <button class="btn btn-primary bg-blue-500 p-3">Completed</button>
+            <button id="emoji-btn" class="btn btn-primary bg-blue-500 p-3">Completed</button>
           </div>
         </div>
       </div>
@@ -132,7 +133,7 @@
   <div>      <p>Deadline</p>
     <p class="font-bold">21 March,2025</p></div>
           <div class="card-actions">
-            <button class="btn btn-primary bg-blue-500 p-3">Completed</button>
+            <button id="openAi-btn" class="btn btn-primary bg-blue-500 p-3">Completed</button>
           </div>
         </div>
       </div>
@@ -148,7 +149,7 @@
   <div>      <p>Deadline</p>
     <p class="font-bold">21 March,2025</p></div>
           <div class="card-actions">
-            <button class="btn btn-primary bg-blue-500 p-3">Completed</button>
+            <button id="job-btn" class="btn btn-primary bg-blue-500 p-3">Completed</button>
           </div>
         </div>
       </div>
@@ -159,9 +160,12 @@
   <img src="assets/activity.png" alt="">
   <h1 class="text-center"> Activity Log</h1>
 </div>
-<button class="btn btn-primary bg-blue-500 p-2 items-center font-semibold">Clear history</button>
+<button id="clear-btn" class="btn btn-primary bg-blue-500 p-2 items-center font-semibold">Clear history</button>
+
       </section>
     </main>
+    <script src="history.js"></script>
+    <script src="main.js"></script>
     <script src="color_btn.js"></script>
 <script src="discover.js"></script>
 </body>
